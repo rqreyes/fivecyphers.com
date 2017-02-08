@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^fivecyphers\.randyqreyes\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.fivecyphers\.randyqreyes\.com$
+RewriteRule ^/?$ "http\:\/\/fivecyphers\.com\/" [R=301,L]
+
+ErrorDocument 404 http://fivecyphers.com/404.php

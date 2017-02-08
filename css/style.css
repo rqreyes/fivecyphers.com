@@ -1,0 +1,285 @@
+/* General
+========================================================================== */
+a, a:hover {
+	color: #000;
+}
+
+section {
+  margin: 30px 0;
+}
+
+section .row {
+  padding: 10px 0;
+}
+
+section a, section a:hover, footer a, footer a:hover {
+	text-decoration: underline;
+}
+
+.button {
+	border-radius: 5px;
+}
+
+/* Fonts
+========================================================================== */
+@font-face {
+	font-family: FiraSans;
+	src: url("http://fivecyphers.com/fonts/FiraSans-Regular.otf");
+}
+
+/* Navigation
+========================================================================== */
+.title-bar {
+	background: #FFF;
+	color: #000;
+}
+
+.title-bar img {
+  float: right;
+}
+
+.top-bar-left {
+  display: none;
+  padding-left: .9375rem;
+}
+
+.menu-icon::after {
+	background: #000;
+	box-shadow: 0 7px 0 #000, 0 14px 0 #000;
+}
+
+.top-bar, .top-bar ul {
+	background-color: #FFF;
+}
+
+.top-bar {
+  max-width: 1200px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: auto;
+}
+
+#menu-header {
+	display: block;
+}
+
+.menu.vertical > li {
+	border-top: 1px solid #000;
+}
+
+.menu > li > a:hover, .menu > li > a:focus {
+	background-color: #DDD;
+	color: #000;
+}
+
+.menu > li > ul > li > a {
+	background-color: #888;
+	color: #FFF;
+	padding-left: 2rem;
+}
+
+.menu > li > ul > li > a:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+.is-accordion-submenu-parent > a::after,
+.dropdown.menu.vertical > li.opens-right > a:after {
+	border-color: #000 transparent transparent;
+}
+
+/* Content
+========================================================================== */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: FiraSans, Arial, sans-serif;
+}
+
+body.book header, body.book .cta {
+  background: #000 url("http://fivecyphers.com/img/bg-book-cover.jpg") no-repeat center;
+  background-size: cover;
+}
+
+body.earth header, body.earth .cta {
+  background: #000 url("http://fivecyphers.com/img/bg-earth.jpg") no-repeat center;
+  background-size: cover;
+}
+
+body.water header, body.water .cta {
+  background: #000 url("http://fivecyphers.com/img/bg-water.jpg") no-repeat right center;
+  background-size: cover;
+}
+
+body.fire header, body.fire .cta {
+  background: #000 url("http://fivecyphers.com/img/bg-fire.jpg") no-repeat center;
+  background-size: cover;
+}
+
+body.wind header, body.wind .cta {
+  background: #000 url("http://fivecyphers.com/img/bg-wind.jpg") no-repeat center;
+  background-size: cover;
+}
+
+body.emptiness header, body.emptiness .cta {
+  background: #000 url("http://fivecyphers.com/img/bg-emptiness.jpg") no-repeat center;
+  background-size: cover;
+}
+
+header {
+  height: 400px;
+  padding: 40px 0;
+}
+
+header.int {
+  height: initial;
+}
+
+header .title,
+header .author {
+	font-family: FiraSans, Arial, sans-serif;
+	color: #FFF;
+}
+
+header .title .five-cyphers {
+	border-top: 1px solid #FFF;
+}
+
+section img {
+  border-radius: 5px;
+}
+
+.cta {
+	color: #FFF;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.cta .button {
+	font-size: 1.4em;
+	border: 1px solid #FFF;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.cta .button:hover {
+	border: 1px solid #FFF;
+	background-color: #FFF;
+	color: #000;
+	text-decoration: none;
+}
+
+.button.perspective {
+	border: 1px solid #000;
+	color: #000;
+}
+
+footer {
+  margin: 20px 0;
+}
+
+.intro p, .cta p, footer p, .thank-you p, .content-404 p {
+  margin-bottom: 0;
+}
+
+/* Emptiness Page
+========================================================================== */
+.contributions:hover .button.perspective {
+	border: 1px solid #000;
+	background-color: #000;
+	color: #FFF;
+}
+
+.profile {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+/* Contact Page
+========================================================================== */
+form .row {
+  padding: 0;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type="submit"].submit {
+	font-size: 1.4em;
+	border: 1px solid #000;
+	color: #000;
+}
+
+input[type="submit"].submit:hover {
+	border: 1px solid #000;
+	background-color: #000;
+	color: #FFF;
+}
+
+/* Media Queries
+========================================================================== */
+/* Small only */
+@media only screen and (max-width: 39.9375em) {
+  h3.text-center, section p {
+    text-align: left;
+  }
+
+  .contributions p {
+    text-align: center;
+  }
+}
+
+/* Medium and up */
+@media only screen and (min-width: 40em) {
+  .top-bar-left {
+    display: block;
+  }
+
+  .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a:after {
+    border-color: #000 transparent transparent;
+  }
+
+  header {
+    height: 600px;
+  }
+
+	.menu.vertical.medium-horizontal > li {
+    border-top: none;
+  }
+
+  .menu > li > ul > li > a {
+    padding-left: 1rem;
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  body.book header, body.book .cta,
+  body.earth header, body.earth .cta,
+  body.water header, body.water .cta,
+  body.fire header, body.fire .cta,
+  body.wind header, body.wind .cta,
+  body.emptiness header, body.emptiness .cta {
+    background-attachment: fixed;
+  }
+
+  body.water header {
+    background-position: right -100px;
+    background-size: 100%;
+  }
+}
+
+/* Xlarge and up */
+@media screen and (min-width: 1200px) {
+  body.water header {
+    background-position: right -200px;
+  }
+}
+
+/* XXlarge and up */
+@media screen and (min-width: 1600px) {
+  body.water header {
+    background-position: right -320px;
+  }
+}
