@@ -26,7 +26,7 @@
 
 		<section>
       <div class="row">
-        <div class="medium-8 medium-centered columns">
+        <div class="medium-6 medium-centered columns">
           <h3 class="text-center">Contact Us</h3>
           <p>Questions, comments, want to contribute, or interested in discussing bboying/bgirling in general? We're open to it all and we'd love to hear from you!</p>
         </div>

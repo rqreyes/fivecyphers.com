@@ -160,7 +160,8 @@ section img {
 	text-decoration: none;
 }
 
-.cta .button:hover {
+.cta .button:hover,
+.cta .button:focus {
 	border: 1px solid #FFF;
 	background-color: #FFF;
 	color: #000;
@@ -176,7 +177,7 @@ footer {
   margin: 20px 0;
 }
 
-.intro p, .cta p, footer p, .thank-you p, .content-404 p {
+.intro p, footer p, .thank-you p, .content-404 p {
   margin-bottom: 0;
 }
 
